@@ -1,0 +1,12 @@
+select actor_id from actor where actor_id=58;
+select title from film where title like 'P%';
+select title,release_year from film where release_year=2006;
+select password from staff where username = 'mike';
+select first_name from actor where first_name not like '%T';
+select actor_id,last_name from actor where actor_id between 50 and 150 or last_name like 'A%';
+select CONCAT(last_name,',', left(first_name,1)) as newmane from customer;
+select CONCAT("film",title,"was released in the year ",release_year) from film;
+select first_name,last_name,address_id from customer;
+select SUBSTRING(title,1,3) as new_title from film;
+select SUBSTRING(last_name,5) from actor;
+
